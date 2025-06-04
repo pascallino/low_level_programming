@@ -1,14 +1,23 @@
+#include <stdio.h>
+#include "main.h"
+
+
 int main() {
 
-int number1;
-int number2;
-int number3 = 2000;
+	int a;
+	int b;
 
-number1 = 450;
-number2 = 1000;
-int result = number1 + number2 + number3;
+	a = 2600;
+	b = 1500;
 
-printf("The answer is = %d", result);
+	float r1 = division(a, b);
+	int r2 = multiplication(a, b);
+	int r3 = addition(a, b);
 
-  return 0;
+	printf(" The sum of %d and %d is = %d\n", a, b, r3);
+	printf(" The division of %d and %d is = %f\n", a, b, r1);
+	printf(" The multiplication of %d and %d is = %d\n", a, b, r2);
+
+	return 0;
+
 }
